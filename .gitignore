@@ -2,6 +2,9 @@
 /.vagrant/
 /ubuntu-xenial-16.04-cloudimg-console.log
 
+# PyCharm
+/.idea/
+
 # NS trace files
 *.tr
 *.nam
