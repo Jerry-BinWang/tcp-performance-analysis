@@ -2,19 +2,16 @@
 set ns [new Simulator]
 
 # Open the trace file
-set tf [open experiment1.tr w]
-set nf [open experiment1.nam w]
+set tf [open [lindex $argv 9] w]
 $ns trace-all $tf
-$ns namtrace-all $nf
 
 # Define a finish procedure
 proc finish {} {
-    global ns tf nf
+    global ns tf
     $ns flush-trace
 
     # Close the trace file
     close $tf
-    close $nf
 
     exit 0
 }
@@ -28,14 +25,14 @@ set N5 [$ns node]
 set N6 [$ns node]
 
 # Create links
-$ns duplex-link $N1 $N2 100Mb 10ms DropTail
-$ns duplex-link $N2 $N3 100Mb 10ms DropTail
-$ns duplex-link $N3 $N4 100Mb 10ms DropTail
-$ns duplex-link $N5 $N2 100Mb 10ms DropTail
-$ns duplex-link $N3 $N6 100Mb 10ms DropTail
+$ns duplex-link $N1 $N2 100Mb [lindex $argv 0] DropTail
+$ns duplex-link $N2 $N3 100Mb [lindex $argv 0] DropTail
+$ns duplex-link $N3 $N4 100Mb [lindex $argv 0] DropTail
+$ns duplex-link $N5 $N2 100Mb [lindex $argv 0] DropTail
+$ns duplex-link $N3 $N6 100Mb [lindex $argv 0] DropTail
 
 # Setup a TCP connection
-set tcp [new Agent/TCP/Reno]
+set tcp [new [lindex $argv 1]]
 $ns attach-agent $N1 $tcp
 set sink [new Agent/TCPSink]
 $ns attach-agent $N4 $sink
@@ -54,18 +51,23 @@ $ns connect $udp $null
 
 # Setup a CBR flow
 set cbr [new Application/Traffic/CBR]
-$cbr set packet_size_ 100
-$cbr set rate_ 5mb
+$cbr set packet_size_ [lindex $argv 2]
+$cbr set rate_ [lindex $argv 3]
 $cbr attach-agent $udp
 
 # Schedule events
-$ns at 0.5 "$cbr start"
-$ns at 1.0 "$ftp start"
-$ns at 9.0 "$ftp stop"
-$ns at 9.5 "$cbr stop"
+$ns at [lindex $argv 4] "$cbr start"
+$ns at [lindex $argv 5] "$cbr stop"
+$ns at [lindex $argv 6] "$ftp start"
+$ns at [lindex $argv 7] "$ftp stop"
+
 
 # Call the finish procedure
-$ns at 10.0 "finish"
+$ns at [lindex $argv 8] "finish"
+
+# Print CBR packet size and interval
+puts "CBR packet size = [$cbr set packet_size_]"
+puts "CBR interval = [$cbr set interval_]"
 
 # Run the simulation
 $ns run
