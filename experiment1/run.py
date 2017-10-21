@@ -2,10 +2,10 @@ import subprocess
 
 latency_list = ['1ms', '10ms', '100ms']
 TCP_list = ['Agent/TCP', 'Agent/TCP/Reno', 'Agent/TCP/Newreno', 'Agent/TCP/Vegas']
-CBR_packet_size_list = [100, 200, 500, 1000, 2000]
-CBR_bandwidth_list = [str(i)+'mb' for i in range(5, 101, 5)]
+CBR_packet_size_list = [100, 200, 500, 1000]
+CBR_bandwidth_list = [str(i)+'mb' for i in range(1, 11)]
 start_time_diff_list = [-1, 0.1, 1, 5, 10]
-tcp_run_time = 30
+tcp_run_time = 20
 
 def run_ns2_simulation(latency, tcp, cbr_packet_size, cbr_bandwidth, start_time_diff):
     if start_time_diff < 0:

@@ -22,7 +22,7 @@ def is_ack_recv_event(record):
 
 def get_time(record):
     return float(record[1])
-
+
 def get_packet_bits(record):
         return 8 * int(record[5])
 
