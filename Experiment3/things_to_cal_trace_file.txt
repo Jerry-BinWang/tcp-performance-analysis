@@ -1,0 +1,17 @@
+Things to calculate from the trace file:
+1. Number of packets send from a src node
+2. Among those, number of packets received at dstn node
+3. Number of packets dropped using 1,2 and separately.
+4. Latency for each packet and then average latency over all the packets.
+
+
+Graphs needed in Exp3: all graphs for both RED and DropTail
+1. TCP and CBR throughput vs time for DropTail
+2. TCP and CBR throughput vs time for RED
+3. TCP - Latency vs packet# for DropTail
+4. TCP - Latency vs packet# for RED
+5. TCP and CBR - cwind vs time
+6. TCP and CBR Bandwidth vs time
+7. TCP - Packet drop vs time
+
+all for reno and sack

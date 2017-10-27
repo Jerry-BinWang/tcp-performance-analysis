@@ -1,0 +1,20 @@
+Average outputs
+CBR -1mb
+Average round trip time:  {'sack': {'RED': 0.07136291918912037}, 'reno': {'RED': 0.07458418955601465}}
+Average latency per packet:  {'sack': {'RED': 0.035208119966679004}, 'reno': {'RED': 0.033920544743502375}}
+Average throughput over full expertiment(kbps):  {'sack': {'RED': 647.3563302338088}, 'reno': {'RED': 319.4044557052734}}
+Average packet drop rate is:  {'sack': {'RED': 60.18822499452834}, 'reno': {'RED': 2.735828408842197}}
+Average round trip time:  {'sack': {'DropTail': 0.08546766549824915}, 'reno': {'DropTail': 0.07296422837870058}}
+Average latency per packet:  {'sack': {'DropTail': 0.05166391387080513}, 'reno': {'DropTail': 0.04201532739098979}}
+Average throughput over full expertiment(kbps):  {'sack': {'DropTail': 621.7369520783872}, 'reno': {'DropTail': 477.25852885674357}}
+Average packet drop rate is:  {'sack': {'DropTail': 204.16590200036705}, 'reno': {'DropTail': 131.9049366856304}}
+
+CBR-3mb
+Average round trip time:  {'sack': {'RED': 0.07795065186640489}, 'reno': {'RED': 0.07513201533457024}}
+Average latency per packet:  {'sack': {'RED': 0.036792568958745116}, 'reno': {'RED': 0.03433297723048441}}
+Average throughput over full expertiment(kbps):  {'sack': {'RED': 454.2274993090691}, 'reno': {'RED': 399.08871874994907}}
+Average packet drop rate is:  {'sack': {'RED': 60.18822499452834}, 'reno': {'RED': 2.735828408842197}}
+Average round trip time:  {'sack': {'DropTail': 0.08397043432362997}, 'reno': {'DropTail': 0.08257897112860962}}
+Average latency per packet:  {'sack': {'DropTail': 0.048627502789925}, 'reno': {'DropTail': 0.05077158632254355}}
+Average throughput over full expertiment(kbps):  {'sack': {'DropTail': 559.6655906113075}, 'reno': {'DropTail': 417.97117202630193}}
+Average packet drop rate is:  {'sack': {'DropTail': 211.04789869700863}, 'reno': {'DropTail': 137.63993393283172}}

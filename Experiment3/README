@@ -1,0 +1,34 @@
+CS653 Milestone Proposal - Virat Shejwalkar & Bin Wang
+
+Following is the methodology we will be adapting for different experiments:
+
+Experiment 1:
+- Latency - For each of the 3 links, we will choose from {1, 10, 100}ms as latency. These values are selected to imitate three common real-world scenarios: intra-datacenter networking, inter-AS networking, and inter-continental networking.
+- Difference in TCP and CBR start rates:
+Here we plan to start CBR before TCP by 1 sec; we think that there will not be any significant change if CBR starts before TCP by different time durations.
+- However, we will start TCP before CBR by {0.1, 1, 5, 10} seconds to see the effect on TCP flow by the CBR flow.
+We will test the effect of intermittent CBR flow on the ongoing TCP flow. For this we will start both the CBR and TCP, and at certain frequency stop the CBR flow and start it again after 10ms.
+- For various performance measures’ calculation following methodology will be used:
+	- Throughput calculation: Number of packets received at N4/(time last packet received at N4 - time first packet sent from N1)
+	- Latency - Difference in sending and receiving times from trace files
+	- Packet drop - (Number of packets sent from N1 - Number of packets received at N4)/Number of packets sent from N1
+
+Experiment 2:
+- To test the fairness of different TCP variants to each other, we think the difference in start times is very important
+- We would like to test the effect of latency on different TCP variants and their throughputs and fairness to each other.
+- We will test the effect of intermittently stopping and starting the CBR flow and calculate throughputs for the two TCP flows.
+- For the two variants in each combination, we will calculate throughput, packet drop-rate and latency as explained in Exp.1.
+
+Experiment 3:
+- We will try different queue lengths along with two different packet dropping policies - DropTail and RED.
+- The experiments will be performed for two TCP variants - Reno and SACK
+- We think that there is no significant effect of different latencies, in terms of difference in end-to-end nodes, on the throughput of the TCP flow 
+  so we will keep the latency of N1-N4 and N5-N6 same over the experiment.
+- To measure the bandwidth provided by each packet-drop policy, we will calculate the overall throughput for both the TCP variants as final 
+  throughput is reflection of the bandwidth provided.
+- For end-to-end latency, we will calculate the average latency of all the packets after CBR flow has started and TCP flow is stead. We will use the 
+  trace file for this. Using the behaviour here, we can see how TCP flow reacts to the start of CBR flow.
+- We will run this experiment for long duration as to be observe behaviours of the flows at different points of time.
+- Based on the analysis above, we will conclude which packet-drop policy is better for which TCP variant.
+
+Note: We will be performing each experiments with by varying parameters concerned over a sufficiently large range which should help us generalise out conclusions. In terms of statistical significance, in addition to running one experiment using the same setup many times, we will also use Monte Carlo method to estimate the p-value of our observation. For example, in the NewReno/Vegas experiment, if we find on average NewReno has a higher throughput than Vegas, we can use the results in the Vegas/Vegas experiment to estimate the p-value that the difference is caused by random. If the p-value is very small then we can basically rule out that possibility.
