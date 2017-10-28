@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.26)  26 OCT 2017 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.26)  27 OCT 2017 20:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1237,13 +1237,12 @@ File: fig/experiment1/throughput.pdf Graphic file (type pdf)
 <use fig/experiment1/throughput.pdf>
 Package pdftex.def Info: fig/experiment1/throughput.pdf used on input line 59.
 (pdftex.def)             Requested size: 483.6967pt x 85.7391pt.
- [2]
+ [2] [3 <./fig/experiment1/drop_rate.pdf> <./fig/experiment1/throughput.pdf>]
 Underfull \hbox (badness 2865) in paragraph at lines 85--86
 \T1/lmr/bx/n/9.49998 Explanation: \T1/lmr/m/n/9.49998 In the NewReno/Reno ex-pe
 r-i-ment,
  []
 
-[3 <./fig/experiment1/drop_rate.pdf> <./fig/experiment1/throughput.pdf>]
 <fig/experiment1/rtt.pdf, id=86, 938.50626pt x 226.8475pt>
 File: fig/experiment1/rtt.pdf Graphic file (type pdf)
 
@@ -1331,11 +1330,11 @@ File: fig/Sack_intervals_RED_DT.pdf Graphic file (type pdf)
 <use fig/Sack_intervals_RED_DT.pdf>
 Package pdftex.def Info: fig/Sack_intervals_RED_DT.pdf used on input line 177.
 (pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
-
+ [4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/tcp_cbr_cumul_3mb_reno_DropTail.pdf, id=103, 361.35pt x 289.08pt>
+<fig/tcp_cbr_cumul_3mb_reno_DropTail.pdf, id=115, 361.35pt x 289.08pt>
 File: fig/tcp_cbr_cumul_3mb_reno_DropTail.pdf Graphic file (type pdf)
 
 <use fig/tcp_cbr_cumul_3mb_reno_DropTail.pdf>
@@ -1343,57 +1342,16 @@ Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_reno_DropTail.pdf used on input
 line 190.
 (pdftex.def)             Requested size: 118.0789pt x 94.46155pt.
 
-<fig/tcp_cbr_cumul_3mb_reno_RED.pdf, id=104, 361.35pt x 289.08pt>
+<fig/tcp_cbr_cumul_3mb_reno_RED.pdf, id=116, 361.35pt x 289.08pt>
 File: fig/tcp_cbr_cumul_3mb_reno_RED.pdf Graphic file (type pdf)
 
 <use fig/tcp_cbr_cumul_3mb_reno_RED.pdf>
 Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_reno_RED.pdf used on input line 
 195.
 (pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf, id=105, 361.35pt x 289.08pt>
-File: fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf Graphic file (type pdf)
-
-<use fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf>
-Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf used on input 
-line 207.
-(pdftex.def)             Requested size: 118.0789pt x 94.46155pt.
-
-<fig/tcp_cbr_cumul_3mb_sack_RED.pdf, id=106, 361.35pt x 289.08pt>
-File: fig/tcp_cbr_cumul_3mb_sack_RED.pdf Graphic file (type pdf)
-
-<use fig/tcp_cbr_cumul_3mb_sack_RED.pdf>
-Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_sack_RED.pdf used on input line 
-212.
-(pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
-
-<fig/sack_latency.pdf, id=109, 361.35pt x 289.08pt>
-File: fig/sack_latency.pdf Graphic file (type pdf)
- <use fig/sack_latency.pdf>
-Package pdftex.def Info: fig/sack_latency.pdf used on input line 225.
-(pdftex.def)             Requested size: 118.0789pt x 94.46155pt.
-
-<fig/reno_latency.pdf, id=110, 361.35pt x 289.08pt>
-File: fig/reno_latency.pdf Graphic file (type pdf)
- <use fig/reno_latency.pdf>
-Package pdftex.def Info: fig/reno_latency.pdf used on input line 230.
-(pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
-
-Underfull \hbox (badness 1527) in paragraph at lines 219--236
-\T1/lmr/m/n/9.49998 val-ues (sack-DropTail:0.0486, sack-RED:0.036, reno-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-[5 <./fig/experiment1/rtt.pdf> <./fig/experiment2/throughput.pdf> <./fig/experi
-ment2/throughput_ratio.pdf> <./fig/tcp_cwind_reno_DropTail.pdf> <./fig/tcp_cwin
-d_sack_DropTail.pdf
+ [5 <./fig/experiment1/rtt.pdf> <./fig/experiment2/throughput.pdf> <./fig/exper
+iment2/throughput_ratio.pdf> <./fig/tcp_cwind_reno_DropTail.pdf> <./fig/tcp_cwi
+nd_sack_DropTail.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/tcp_cwind_sack_DropTail.pdf): PDF incl
 usion: multiple pdfs with page group included in a single page
@@ -1405,13 +1363,43 @@ sion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex.exe (file ./fig/Sack_throughput_RED_DT.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
->]
-Underfull \hbox (badness 5548) in paragraph at lines 262--263
-[]\T1/lmss/m/n/8 T. Hen-der-son, Delayed-ACK TCP Sink, 
+>] <fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf, id=286, 361.35pt x 289.08pt>
+File: fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf Graphic file (type pdf)
+
+<use fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf>
+Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_sack_DropTail.pdf used on input 
+line 207.
+(pdftex.def)             Requested size: 118.0789pt x 94.46155pt.
+
+<fig/tcp_cbr_cumul_3mb_sack_RED.pdf, id=287, 361.35pt x 289.08pt>
+File: fig/tcp_cbr_cumul_3mb_sack_RED.pdf Graphic file (type pdf)
+
+<use fig/tcp_cbr_cumul_3mb_sack_RED.pdf>
+Package pdftex.def Info: fig/tcp_cbr_cumul_3mb_sack_RED.pdf used on input line 
+212.
+(pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
+
+<fig/sack_latency.pdf, id=290, 361.35pt x 289.08pt>
+File: fig/sack_latency.pdf Graphic file (type pdf)
+ <use fig/sack_latency.pdf>
+Package pdftex.def Info: fig/sack_latency.pdf used on input line 225.
+(pdftex.def)             Requested size: 118.0789pt x 94.46155pt.
+
+<fig/reno_latency.pdf, id=291, 361.35pt x 289.08pt>
+File: fig/reno_latency.pdf Graphic file (type pdf)
+ <use fig/reno_latency.pdf>
+Package pdftex.def Info: fig/reno_latency.pdf used on input line 230.
+(pdftex.def)             Requested size: 113.35474pt x 90.68132pt.
+
+Underfull \hbox (badness 1527) in paragraph at lines 219--236
+\T1/lmr/m/n/9.49998 val-ues (sack-DropTail:0.0486, sack-RED:0.036, reno-
  []
 
 
-AED: lastpage setting LastPage
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+
+ []
+
 [6 <./fig/reno_intervals_RED_DT.pdf> <./fig/Sack_intervals_RED_DT.pdf
 
 pdfTeX warning: pdflatex.exe (file ./fig/Sack_intervals_RED_DT.pdf): PDF inclus
@@ -1441,6 +1429,15 @@ iple pdfs with page group included in a single page
 pdfTeX warning: pdflatex.exe (file ./fig/reno_latency.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
 >]
+Underfull \hbox (badness 5548) in paragraph at lines 262--263
+[]\T1/lmss/m/n/8 T. Hen-der-son, Delayed-ACK TCP Sink, 
+ []
+
+
+AED: lastpage setting LastPage
+[7
+
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 265.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 265.
  (./template.aux)
@@ -1451,13 +1448,13 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 265.
  ) 
 Here is how much of TeX's memory you used:
- 11063 strings out of 492995
- 161402 string characters out of 6136401
- 265328 words of memory out of 5000000
+ 11064 strings out of 492995
+ 161408 string characters out of 6136401
+ 263328 words of memory out of 5000000
  14332 multiletter control sequences out of 15000+600000
  71099 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,10n,40p,1264b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,10n,40p,1264b,488s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2017
 /texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{c:/texlive/2017/texmf-dist/fonts/
 enc/dvips/lm/lm-rm.enc}{c:/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit
@@ -1476,10 +1473,10 @@ ive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb><c:/texlive/2017/texmf-dist
 lic/lm/lmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><
 c:/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/texlive/2017/tex
 mf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on template.pdf (6 pages, 623329 bytes).
+Output written on template.pdf (7 pages, 624736 bytes).
 PDF statistics:
- 705 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 711 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 29 named destinations out of 1000 (max. 500000)
  147 words of extra memory for PDF output out of 10000 (max. 10000000)
 
